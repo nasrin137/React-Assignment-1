@@ -16,7 +16,7 @@ function Navbar() {
             <ul className="flex justify-between items-center gap-5">
                 <li><Link to="/">Dashboard</Link></li>
                 <li><Link to="/incidents">Incidents</Link></li>
-                <li><Link>Locations</Link></li>
+                <li><Link to="/locations">Locations</Link></li>
                 <li><Link>Activities</Link></li>
                 <li><Link>Documents</Link></li>
                 <li><Link>Cypher AI</Link></li>
