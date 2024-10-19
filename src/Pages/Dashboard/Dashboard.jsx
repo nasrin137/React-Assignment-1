@@ -16,8 +16,8 @@ function Dashboard() {
     <section className='w-full'>
           <div className="flex justify-between items-center py-3  px-20 bg-gray">
             <div>
-                <p className='text-sm text-ash'>Welcome back</p>
-                <h1 className='text-[26px] text-[#09090B] font-bold'>Dashboard</h1>
+                <p className='title-intro'>Welcome back</p>
+                <h1 className='title'>Dashboard</h1>
             </div>
             <div className="flex justify-between items-center relative gap-3">
             <CiSearch className="top-3 left-3 absolute" /><input  type="text" className="w-[190px] h-[42px] rounded-md  border-[1px] border-secondary bg-[#FAFAFA] py-3 px-[10px] text-ash pl-8 text-sm" placeholder="Search incident"/>

@@ -47,9 +47,9 @@ function Navbar() {
 
        </div>
 
-       <div className=" w-full border border-b-[1px] border-[#3F3F46]">
+       <div className=" w-full border border-b-[1px] border-gray">
 
-        </div>
+       </div>
 
          {/* lower portion of navbar */}
        

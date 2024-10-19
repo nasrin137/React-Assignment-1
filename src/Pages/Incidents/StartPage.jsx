@@ -2,8 +2,8 @@ import React from 'react'
 import Container from '../../Components/Shared/Container'
 import { startedCards } from '../../Components/Data'
 import StartedCard from './StartedCard'
-import Button from '../../Components/Shared/Button'
 import { useNavigate } from 'react-router-dom'
+import Button from '../../Components/Shared/Button'
 
 function StartPage() {
     const navigate  = useNavigate()
@@ -13,8 +13,9 @@ function StartPage() {
   return (
     <section>
         <Container>
-            <h1>Let’s get started</h1>
-            <p>Lorem ipsum dolar sit general sac mascho werhoLorem ipsum dolar sit general sac mascho werhoLorem ipsum dolar sit gene</p>
+          <div className='max-w-4xl mx-auto mt-12'>
+          <h1 className='font-bold text-center text-4xl text-dark'>Let’s get started</h1>
+            <p className='max-w-[468px] mx-auto text-base text-ash text-center pt-5'>Lorem ipsum dolar sit general sac mascho werhoLorem ipsum dolar sit general sac mascho werhoLorem ipsum dolar sit gene</p>
             <div className='border-[#E4E4E7] border-b-2 flex justify-between relative w-[600px] mx-auto mt-10'>
                 <img src="Images/boll.png" alt="" className='absolute -top-3'/>
                 <img src="Images/boll.png" alt="" className='absolute -top-3 left-72'/>
@@ -28,7 +29,9 @@ function StartPage() {
                     ))
                 }
             </div>
-            <button onClick={handleClick} classname="block mx-auto mt-10">Get Started</button>
+            <Button onClick={handleClick} classname="block mx-auto mt-10">Get Started</Button>
+            {/* <button onClick={handleClick} classname="block mx-auto mt-10">Get Started</button> */}
+          </div>
         </Container>
 
     </section>

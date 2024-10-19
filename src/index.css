@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.title-intro{
+    font-size: 14px;
+    color:#71717A;
+}
+.title{
+    font-size:26px;
+    color: #09090B;
+    font-weight: bold;
+}

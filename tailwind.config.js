@@ -14,6 +14,9 @@ export default {
         ash:"#71717A",
         dark:"#09090B"
       },
+      boxShadow:{
+        card:"0px 4px 48px 52px #0000000F"
+      }
     },
   },
   plugins: [],
