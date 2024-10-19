@@ -1,9 +1,10 @@
 import React from 'react'
 import Button from '../../Components/Shared/Button'
 
-function ChatPopUp() {
+function ChatPopUp({toggleChatBox}) {
   return (
-    <div className='bg-[#F4F4F5] w-[331px] h-[280px] relative'>
+   <div className=' absolute top-48 right-16'>
+     <div className='bg-[#F4F4F5] w-[331px] h-[280px] relative '>
         <h1 className='bg-primary text-white text-center'>Chat with Cypher</h1>
        <div>
        <p className='bg-[#3F3F46] w-[213px] h-[57px] absolute top-7 right-0'>Lorem ipsum dolar sit general sac mascho werho</p>
@@ -20,10 +21,11 @@ function ChatPopUp() {
             </div>
             <Button>Send</Button>
         </div>
-        <div className='flex justify-end'>
+        <button onClick={toggleChatBox} className='flex justify-end'>
         <img src="Images/close.png" alt="" className='' />
-        </div>
+        </button>
     </div>
+   </div>
   )
 }
 

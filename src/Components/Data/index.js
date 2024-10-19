@@ -1,3 +1,29 @@
+export const navItems = [
+    {
+        label:"Dashboard",
+        link:"/"
+    },
+    {
+        label:"Incidents",
+        link:"/incidents"
+    },
+    {
+        label:"Locations",
+        link:"/locations"
+    },
+    {
+        label:"Activities",
+        link:"/activities"
+    },
+    {
+        label:"Documents",
+        link:"/documents"
+    },
+    {
+        label:"Cypher AI",
+        link:"/cypherAI"
+    }
+]
 export const cardInfo = [
     {   img:"Images/cardImg1.png",
         title:"Whitechapel Rd.",

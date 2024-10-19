@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { cardInfo } from '../../Components/Data'
 import Card from '../../Components/Shared/Card'
 import Container from '../../Components/Shared/Container'
@@ -7,6 +7,12 @@ import { CiSearch } from 'react-icons/ci'
 import Button from '../../Components/Shared/Button'
 
 function Dashboard() {
+  const[isOpen,setIsOpen]=useState(false);
+
+  const toggleChatBox = ()=>{
+    setIsOpen(!isOpen)
+    // console.log('click')
+  }
   return (
     <section className='w-full'>
           <div className="flex justify-between items-center py-3  px-20 bg-accent">
@@ -29,7 +35,12 @@ function Dashboard() {
             ))
         }
     </div>
-    <ChatPopUp></ChatPopUp>
+   <button onClick={toggleChatBox}>
+   <img src="/Images/C.png" alt="" className='bg-primary rounded-full p-4 absolute right-28'/>
+   </button>
+   {
+    isOpen &&  <ChatPopUp toggleChatBox={toggleChatBox}></ChatPopUp>
+   }
   </Container>
     </section>
   )
