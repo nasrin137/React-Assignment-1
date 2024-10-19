@@ -11,3 +11,25 @@
     color: #09090B;
     font-weight: bold;
 }
+.incidentTitle{
+    font-size: 24px;
+    font-weight: bold;
+    color: #09090B;
+}
+.incident-description{
+    font-size: 14px;
+    color: #71717A;
+    padding-top: 4px;
+    padding-bottom: 20px;
+}
+.incident-input{
+    border: 1px;
+    border-color:#E4E4E780;
+    border-radius: 6px;
+    color: #71717A;
+    font-size: 14px;
+    padding: 16px 12px;
+    width: 752px;
+    height: 50px;
+    outline: none;
+}
