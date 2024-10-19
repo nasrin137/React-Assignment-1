@@ -1,7 +1,5 @@
 import { Link,Outlet } from "react-router-dom"
-import { CiSearch } from "react-icons/ci";
 import Container from "./Container";
-import Button from "./Button";
 import { navItems } from "../Data";
 import { useState } from "react";
 import { IoMdMenu } from "react-icons/io";
@@ -9,29 +7,22 @@ import MobileMenu from "../MobileMenu";
 
 function Navbar() {
     const [isMenuOpen,setIsMenuOpen] = useState(false)
-    const toggleMenu = ()=> setIsMenuOpen(!isMenuOpen)
+    const toggleMenu = ()=> {
+        setIsMenuOpen(!isMenuOpen)
+    }
 
   return (
-    <nav className="bg-accent">
+    <nav className="bg-gray">
       <Container>
-          {/* upper portion of navbar */}
        <div className="flex justify-between items-center">
        <div>
             <img src="Images/logo.png" alt="logo" />
         </div>
-        <div>
-            {/* <ul className="flex justify-between items-center gap-5">
-                <li><Link to="/">Dashboard</Link></li>
-                <li><Link to="/incidents">Incidents</Link></li>
-                <li><Link to="/locations">Locations</Link></li>
-                <li><Link>Activities</Link></li>
-                <li><Link>Documents</Link></li>
-                <li><Link>Cypher AI</Link></li>
-            </ul> */}
-             <ul  className="flex justify-between items-center gap-5">
+        <div className="hidden lg:flex justify-between items-center gap-5">
+             <ul  className="flex justify-between items-center gap-8">
              {
                 navItems.map(({label,link},i)=>(
-                    <li className=' text-sm xl:text-base hover:text-primary transition-colors duration-150' key={i}><Link to={link}>{label}</Link></li>
+                    <li className='text-sm xl:text-base text-[#71717A]  hover:text-primary transition-colors duration-150' key={i}><Link to={link}>{label}</Link></li>
                    
                 ))
             }
@@ -43,12 +34,16 @@ function Navbar() {
             <img src="Images/notification.png" alt="" />
             <div className="flex justify-between items-center">
                 <img src="" alt="" />
-                <div>
+                <div className="text-[#71717A] font-semibold text-base">
                     <h5>Usman Zafar</h5>
-                    <p>usmanzafar@gmail.com</p>
+                    <p className="font-normal text-sm">usmanzafar@gmail.com</p>
                 </div>
             </div>
         </div>
+        <button onClick={toggleMenu} className="md:hidden"><IoMdMenu></IoMdMenu></button>
+        {
+            isMenuOpen && <MobileMenu toggleMenu={toggleMenu}></MobileMenu>
+        }
 
        </div>
 

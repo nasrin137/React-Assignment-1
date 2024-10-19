@@ -1,6 +1,7 @@
 import React from 'react'
 import { AiOutlineClose } from "react-icons/ai";
 import { Link } from 'react-router-dom';
+import { navItems } from './Data';
 
 function MobileMenu({toggleMenu}) {
   return (
@@ -10,7 +11,7 @@ function MobileMenu({toggleMenu}) {
         <AiOutlineClose className='text-black text-2xl'/></button>
     </div>
         <div className='space-y-4'>
-        <ul  className="flex justify-between items-center gap-5">
+        <ul className="flex-col justify-between items-center gap-5">
              {
                 navItems.map(({label,link},i)=>(
                     <li key={i}><Link to={link}>{label}</Link></li>

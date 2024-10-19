@@ -3,9 +3,9 @@ import Button from '../../Components/Shared/Button'
 
 function ChatPopUp({toggleChatBox}) {
   return (
-   <div className=' absolute top-48 right-16'>
-     <div className='bg-[#F4F4F5] w-[331px] h-[280px] relative '>
-        <h1 className='bg-primary text-white text-center'>Chat with Cypher</h1>
+   <div className='absolute top-48 right-16 '>
+     <div className='bg-[#F4F4F5] w-[331px] h-[280px] relative'>
+        <h1 className='bg-primary text-[#FAFAFA] font-bold text-lg py-2 pl-4 rounded-t-lg'>Chat with Cypher</h1>
        <div>
        <p className='bg-[#3F3F46] w-[213px] h-[57px] absolute top-7 right-0'>Lorem ipsum dolar sit general sac mascho werho</p>
         <p className='bg-[#F4F4F5] w-[213px] h-[57px] pt-16'>Lorem ipsum dolar sit general sac mascho werho</p>
