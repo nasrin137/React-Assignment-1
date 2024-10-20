@@ -1,10 +1,9 @@
 import React, { useState } from 'react'
-import { CiSearch } from 'react-icons/ci'
 import Container from '../../Components/Shared/Container'
 import { newIncidentCards } from '../../Components/Data'
 import NewIncidentsCard from './NewIncidentsCard'
 import { useNavigate } from 'react-router-dom'
-import IncidentIntro from '../../Components/IncidentIntro'
+
 
 function NewIncident() {
     const [activeCard, setActiveCard] = useState(1);

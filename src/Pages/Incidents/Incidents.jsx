@@ -1,10 +1,8 @@
 import React from 'react'
 import { CiSearch } from 'react-icons/ci'
-import Button from '../../Components/Shared/Button'
 import Card from '../../Components/Shared/Card'
 import { cardInfo } from '../../Components/Data'
 import Container from '../../Components/Shared/Container'
-import StartPage from './StartPage'
 import { useNavigate } from 'react-router-dom'
 
 function Incidents() {

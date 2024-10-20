@@ -6,9 +6,11 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily:{
+        "onest":['"Onest"',"sans-serif"],
+      },
       colors:{
         primary:"#F26922",
-        secondary:"#E4E4E780",
         accent:"#A1A1AA",
         gray:"#E4E4E780",
         ash:"#71717A",

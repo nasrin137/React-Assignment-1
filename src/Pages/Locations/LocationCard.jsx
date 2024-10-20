@@ -1,5 +1,3 @@
-
-
 function LocationCard({img,title,description,price}) {
   return (
     <div className='relative rounded-lg font-bold text-sm text-dark space-y-1 hover:translate-y-2 transition-all duration-300'>

@@ -22,7 +22,7 @@ function Navbar() {
              <ul  className="flex justify-between items-center gap-8">
              {
                 navItems.map(({label,link},i)=>(
-                    <li className='text-sm xl:text-base text-[#71717A]  hover:text-primary transition-colors duration-150' key={i}><Link to={link}>{label}</Link></li>
+                    <li className='font-onest text-sm xl:text-base text-[#71717A]  hover:text-primary transition-colors duration-150' key={i}><Link to={link}>{label}</Link></li>
                    
                 ))
             }
@@ -33,7 +33,6 @@ function Navbar() {
         <div className="hidden md:flex md:justify-between md:items-center md:gap-5">
             <img src="Images/notification.png" alt="" />
             <div className="flex justify-between items-center">
-                {/* <img src="" alt="" /> */}
                 <div className="text-[#71717A] font-semibold text-base">
                     <h5>Usman Zafar</h5>
                     <p className="font-normal text-sm">usmanzafar@gmail.com</p>
@@ -47,11 +46,7 @@ function Navbar() {
 
        </div>
 
-       <div className=" w-full border border-b-[1px] border-gray">
-
-       </div>
-
-         {/* lower portion of navbar */}
+       <div className=" w-full border border-b-[1px] border-gray"></div>
        
       </Container>
       <Outlet></Outlet>

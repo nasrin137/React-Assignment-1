@@ -1,5 +1,4 @@
 import React from 'react'
-import Button from '../../Components/Shared/Button'
 
 
 function StartedCard({img,title,description}) {
