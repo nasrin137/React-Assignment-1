@@ -20,8 +20,8 @@ function Dashboard() {
                 <h1 className='title'>Dashboard</h1>
             </div>
             <div className=" flex-col md:flex md:flex-row justify-between items-center relative  md:gap-3">
-            <CiSearch className="top-4 md:top-5 left-3 absolute" /><input  type="text" className="w-[190px] h-[42px] rounded-md  border-[1px] border-secondary bg-[#FAFAFA] py-3 px-[10px] text-ash pl-8 text-sm" placeholder="Search incident"/>
-            <input  type="text" className="w-[170px] h-[42px] rounded-md  border-[1px] border-secondary bg-[#FAFAFA] py-3 px-[15px] text-ash text-sm mt-2 mb-2" placeholder="Sort By: Date modified"/>
+            <CiSearch className="top-4 md:top-5 left-3 absolute" /><input  type="text" className="w-[190px] h-[42px] rounded-md  border-[1px] border-gray bg-[#FAFAFA] py-3 px-[10px] text-ash pl-8 text-sm" placeholder="Search incident"/>
+            <input  type="text" className="w-[170px] h-[42px] rounded-md  border-[1px] border-gray bg-[#FAFAFA] py-3 px-[15px] text-ash text-sm mt-2 mb-2" placeholder="Sort By: Date modified"/>
             <Button>Cypher AI</Button>
             </div>
          </div>
