@@ -13,7 +13,7 @@ function IncidentFinished() {
         navigate('/dashboard')
     }
   return (
-    <div>
+    <>
         <div className="flex justify-between items-center py-3  px-20 bg-gray">
     <div className='flex justify-between items-center gap-5'>
         <img src="Images/close.png" alt="" className='rounded-full shadow-card bg-white px-1 py-1 mt-3 size-8' />
@@ -47,12 +47,9 @@ function IncidentFinished() {
             <input  type="text"  className="w-[220px] h-[42px] rounded-md  border-[1px] border-gray bg-[#F4F4F5] py-3 px-[10px] text-ash pl-8 text-sm" placeholder="Pinpoint damage"/>
         </div>
     </div>
-
-        {/* <CiSearch className="top-4 left-3 absolute" /><input  type="text" className="w-[190px] h-[42px] rounded-md  border-[1px] bg-[#F4F4F5] py-3 px-[10px] text-[#71717A] pl-8" placeholder="Search incident"/> */}
-    
-    </div>
+</div>
  </Container>
-    </div>
+    </>
   )
 }
 
