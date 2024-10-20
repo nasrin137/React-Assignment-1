@@ -30,9 +30,9 @@ function NewIncident() {
         <img src="Images/progressBar.png" alt="" />
     </div>
     <div className="flex justify-between items-center relative gap-3">
-  <button onClick={handleBack} className='bg-white btn text-ash font-bold text-sm border border-[#D4D4D8] px-9 py-2 w-[139px] h-[42px] rounded-md'>
+  <button onClick={handleBack} className='bg-white btn text-ash hover:bg-primary transition-all duration-300 hover:text-white font-bold text-sm border border-[#D4D4D8] px-9 py-2 w-[139px] h-[42px] rounded-md'>
     Back</button>
-   <button onClick={handleClick} className='bg-primary btn font-bold text-sm  text-white w-[139px] h-[42px] rounded-md'>Next Step</button>
+   <button onClick={handleClick} className='bg-primary btn font-bold text-sm  text-white w-[139px] h-[42px] rounded-md hover:bg-white transition-all duration-300 hover:text-primary'>Next Step</button>
     </div>
   
  </div>

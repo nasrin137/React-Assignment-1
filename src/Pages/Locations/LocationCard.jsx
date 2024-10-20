@@ -2,7 +2,7 @@
 
 function LocationCard({img,title,description,price}) {
   return (
-    <div className='relative rounded-lg font-bold text-sm text-dark space-y-1'>
+    <div className='relative rounded-lg font-bold text-sm text-dark space-y-1 hover:translate-y-2 transition-all duration-300'>
        <img src={img} alt="" />
        <h4>{title}</h4>
        <h6 className="text-sm text-ash font-normal">{description}</h6>

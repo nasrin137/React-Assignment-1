@@ -10,7 +10,7 @@ function IncidentFinished() {
         navigate('/incidentDescription')
     }
     const handleFinish = () =>{
-        navigate('/dashboard')
+        navigate('/')
     }
   return (
     <>
@@ -26,9 +26,9 @@ function IncidentFinished() {
         <img src="Images/progressBar.png" alt="" />
     </div>
     <div className="flex justify-between items-center relative gap-3">
-  <button onClick={handleBack} className='bg-white btn text-ash font-bold text-sm border border-[#D4D4D8] px-9 py-2 w-[139px] h-[42px] rounded-md'>
+  <button onClick={handleBack} className='bg-white btn text-ash font-bold text-sm border border-[#D4D4D8] px-9 py-2 w-[139px] h-[42px] rounded-md hover:bg-primary transition-all duration-300 hover:text-white'>
     Back</button>
-   <button onClick={handleFinish} className='bg-primary btn font-bold text-sm  text-white w-[139px] h-[42px] rounded-md'>Finished</button>
+   <button onClick={handleFinish} className='bg-primary btn font-bold text-sm  text-white w-[139px] h-[42px] rounded-md hover:bg-white transition-all duration-300 hover:text-primary'>Finished</button>
     </div>
   
  </div>

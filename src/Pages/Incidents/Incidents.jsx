@@ -22,7 +22,7 @@ function Incidents() {
             <div className="flex justify-between items-center relative gap-3">
             <CiSearch className="top-3 left-3 absolute" /><input  type="text" className="w-[190px] h-[42px] rounded-md  border-[1px] border-secondary bg-[#FAFAFA] py-3 px-[10px] text-ash pl-8 text-sm" placeholder="Search incident"/>
             <input  type="text" className="w-[170px] h-[42px] rounded-md  border-[1px] border-secondary bg-[#FAFAFA] py-3 px-[15px] text-ash text-sm" placeholder="Sort By: Date modified"/>
-            <button onClick={handleClick} className='bg-primary flex justify-center items-center gap-2 text-white text-sm px-2 py-3 rounded-lg w-[150px]'>
+            <button onClick={handleClick} className='bg-primary flex justify-center items-center gap-2 text-white text-sm px-2 py-3 rounded-lg w-[150px] hover:bg-white hover:text-primary transition-all duration-300'>
               <img src="/Images/plus.png" alt="" />New Incident</button>
             
             </div>
