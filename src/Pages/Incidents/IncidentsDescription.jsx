@@ -5,11 +5,11 @@ import { useNavigate } from 'react-router-dom'
 import IncidentIntro from '../../Components/IncidentIntro';
 
 function IncidentsDescription() {
-    const navigate = useNavigate();
+    // const navigate = useNavigate();
 
-    const handleNext = () =>{
-        navigate('/finished')
-    }
+    // const handleNext = () =>{
+    //     navigate('/finished')
+    // }
   return (
 //     <div>
 //           <div className="flex justify-between items-center py-3  px-20 bg-accent">
