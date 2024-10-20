@@ -13,15 +13,15 @@ export const navItems = [
     },
     {
         label:"Activities",
-        link:"/activities"
+        link:"/errorPage"
     },
     {
         label:"Documents",
-        link:"/documents"
+        link:"/errorPage"
     },
     {
         label:"Cypher AI",
-        link:"/cypherAI"
+        link:"/errorPage"
     }
 ]
 export const cardInfo = [
