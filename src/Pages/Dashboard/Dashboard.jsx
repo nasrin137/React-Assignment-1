@@ -13,15 +13,15 @@ function Dashboard() {
     setIsOpen(!isOpen)
   }
   return (
-    <section className='w-full'>
-          <div className="flex justify-between items-center py-3  px-20 bg-gray">
+    <section className='w-full relative'>
+          <div className="flex-col md:flex md:flex-row justify-between items-center py-3  px-20 bg-gray ">
             <div>
                 <p className='title-intro'>Welcome back</p>
                 <h1 className='title'>Dashboard</h1>
             </div>
-            <div className="flex justify-between items-center relative gap-3">
-            <CiSearch className="top-3 left-3 absolute" /><input  type="text" className="w-[190px] h-[42px] rounded-md  border-[1px] border-secondary bg-[#FAFAFA] py-3 px-[10px] text-ash pl-8 text-sm" placeholder="Search incident"/>
-            <input  type="text" className="w-[170px] h-[42px] rounded-md  border-[1px] border-secondary bg-[#FAFAFA] py-3 px-[15px] text-ash text-sm" placeholder="Sort By: Date modified"/>
+            <div className=" flex-col md:flex md:flex-row justify-between items-center relative  md:gap-3">
+            <CiSearch className="top-4 md:top-5 left-3 absolute" /><input  type="text" className="w-[190px] h-[42px] rounded-md  border-[1px] border-secondary bg-[#FAFAFA] py-3 px-[10px] text-ash pl-8 text-sm" placeholder="Search incident"/>
+            <input  type="text" className="w-[170px] h-[42px] rounded-md  border-[1px] border-secondary bg-[#FAFAFA] py-3 px-[15px] text-ash text-sm mt-2 mb-2" placeholder="Sort By: Date modified"/>
             <Button>Cypher AI</Button>
             </div>
          </div>
@@ -37,7 +37,7 @@ function Dashboard() {
     </div>
     {/* chatbox portion */}
    <button onClick={toggleChatBox}>
-   <img src="/Images/C.png" alt="" className='bg-primary rounded-full p-4 absolute right-28 -bottom-16'/>
+   <img src="/Images/C.png" alt="" className='bg-primary rounded-full p-4 absolute bottom-2 right-7 md:absolute md:right-28 md:-bottom-16'/>
    </button>
    {
     isOpen &&  <ChatPopUp toggleChatBox={toggleChatBox}></ChatPopUp>

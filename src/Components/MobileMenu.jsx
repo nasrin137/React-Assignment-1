@@ -5,7 +5,7 @@ import { navItems } from './Data';
 
 function MobileMenu({toggleMenu}) {
   return (
-    <div className='lg:hidden absolute top-0 left-0 w-full h-screen bg-white z-50 p-6 overflow-y-hidden'>
+    <div className='lg:hidden absolute top-0 left-0 w-full h-[250px] bg-white z-50 p-6 overflow-y-hidden'>
     <div className='flex justify-between items-center pb-6'>
     <button onClick={toggleMenu}>
         <AiOutlineClose className='text-black text-2xl'/></button>

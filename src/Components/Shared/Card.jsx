@@ -2,7 +2,7 @@ import React from 'react'
 
 function Card({img,title,description,price}) {
   return (
-    <div className='relative font-bold text-base text-dark space-y-1 hover:translate-y-5 transition-all duration-300'>
+    <div className='relative font-bold text-base text-dark space-y-1 hover:translate-y-5 transition-all duration-300 pl-7 mb-3'>
        <img src={img} alt="" />
        <h4>{title}</h4>
        <h6 className='text-sm text-ash font-normal'>{description}</h6>

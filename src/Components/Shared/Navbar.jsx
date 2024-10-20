@@ -30,10 +30,10 @@ function Navbar() {
            
         </div>
 
-        <div className="flex justify-between items-center gap-5">
+        <div className="hidden md:flex md:justify-between md:items-center md:gap-5">
             <img src="Images/notification.png" alt="" />
             <div className="flex justify-between items-center">
-                <img src="" alt="" />
+                {/* <img src="" alt="" /> */}
                 <div className="text-[#71717A] font-semibold text-base">
                     <h5>Usman Zafar</h5>
                     <p className="font-normal text-sm">usmanzafar@gmail.com</p>
